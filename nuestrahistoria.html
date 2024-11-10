@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia</title>
+    <style>
+        /* Fondo de la página */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+            background: linear-gradient(135deg, #f3e5f5 30%, #f8bbd0 100%);
+            font-family: Arial, sans-serif;
+            color: #4e342e;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border: 2px solid #ce93d8;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Título de la sección */
+        h1 {
+            text-align: center;
+            color: #ab47bc;
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        /* Estilo de la línea de tiempo */
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+            list-style: none;
+        }
+
+        /* Estilo de cada evento */
+        .timeline-event {
+            padding: 15px 25px;
+            background-color: #f8bbd0;
+            border-radius: 10px;
+            margin: 20px 0;
+            position: relative;
+            color: #6a1b9a;
+            font-size: 1.1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .timeline-event::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ab47bc;
+            border-radius: 50%;
+            top: 20px;
+            left: -15px;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #8e24aa;
+        }
+
+        /* Línea vertical */
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background-color: #d1c4e9;
+        }
+
+        /* Botón para regresar a la página de inicio */
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ab47bc;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-button:hover {
+            background-color: #8e24aa;
+        }
+
+        /* Estilo para la nota de inicio y final */
+        .note {
+            font-size: 1.1em;
+            color: #8e24aa;
+            margin-bottom: 20px;
+            background-color: #e1bee7;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ce93d8;
+        }
+
+        /* Estilo para la imagen */
+        img {
+            width: 30%;        /* Ajusta el tamaño según sea necesario */
+            max-width: 200px;  /* Limita el tamaño máximo a 600px */
+            height: auto;      /* Mantiene las proporciones */
+            display: block;
+            margin: 30px auto; /* Centra la imagen */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Nota de inicio -->
+        <div class="note">
+            <p><strong>Nota:</strong> Se han excluido días entre semana o de pocas horas para mantener la línea de tiempo enfocada en los momentos más importantes.</p>
+        </div>
+
+        <h1>Nuestra Historia</h1>
+        <ul class="timeline">
+            <li class="timeline-event">
+                <p class="timeline-date">10 de Agosto, 2024</p>
+                <p>Nos conocimos por primera vez en una cuadra llamada Tepeyac, y pregunté por una tal Loretta donde casi me tiran de loco. Desde ese momento supe que algo especial estaba comenzando. Ese día estuvo de lo mejor, fuimos a comer al Buffalo, platicamos profundamente sin saber que ese día tendría la charla con una de las personas que más adelante sería especial para mí. Por supuesto, tomamos agua de jamaica, a pesar de que no me gusta, para enseñarle a montar bicicleta.</p>
+            </li>
+
+            <li class="timeline-event">
+                <p class="timeline-date">22 de Septiembre, 2024</p>
+                <p>Ese día fui por alguien al cerrito bien temprano, por ese amor de persona que sabrá Dios, pero se levantó bien temprano un domingo. Subimos el cerro 100 veces y Lorena me cargó, nunca se cansó. Aunque sonaría bonito, fue todo lo contrario. De paso, fuimos al IHOP.</p>
+            </li>
+
+            <li class="timeline-event">
+                <p class="timeline-date">01 de Octubre, 2024</p>
+                <p>Recuerdo que ese día fui a comprarme una camiseta que me gustó mucho, sin saber que luego la regalaría a una enana de bonito pelo. Ese día fue muy top porque el picnic también estuvo increíble, las flores, la comida, el ambiente... ¡Todo! 100/10 sin palabras.</p>
+            </li>
+
+            <li class="timeline-event">
+                <p class="timeline-date">06 de Octubre, 2024</p>
+                <p>Ese día fuimos a Paseo La Fe, comimos en el carro, mirador, alguien me manchó mi carro con un ICEE misterioso, pero es mi enana favorita. Como mi villano favorito, si yo fuera Gru, ella sería mi Minion favorito.</p>
+            </li>
+
+            <li class="timeline-event">
+                <p class="timeline-date">10 de Octubre, 2024</p>
+                <p>Fuimos a comer y un señor me vendió unas paletas por una sonrisa. Ahora sí, me ayudó con la ropa, eligiendo la mejor, y tiene buen gusto. También comimos en Subway, fotos en la cabina... todo estuvo bien.</p>
+            </li>
+
+            <li class="timeline-event">
+                <p class="timeline-date">13 de Octubre, 2024</p>
+                <p>La más nerviosa de la fiesta de independencia. Fuimos a un XV años y, la verdad, siempre se ve hermosa, pero esa vez estaba embobado viéndola todo el tiempo, con esos ojitos que tiene, ¡pffff! Bailamos en la pista, nos tomamos fotitos en la cabina, y conoció a mi familia.</p>
+            </li>
+
+            <li class="timeline-event">
+                <p class="timeline-date">17 de Octubre, 2024</p>
+                <p>Ese día esa enanita se veía muy rockera, pero fue una gran maestra y me ayudó a estudiar. Comimos helado del Burger King, ¡creo que sí! Fue un día bonito y, además, gracias a ella pasé un examen de un curso de certificación. ¡Motivación infinita!</p>
+            </li>
+
+            <li class="timeline-event">
+                <p class="timeline-date">24 de Octubre, 2024</p>
+                <p>Ese día hicimos dulces para San Judas. También fue la primera vez que vio mi casa, conoció a Kika en persona y a 3 de mis 4 hermanas. Comimos dulces y fuimos al mercado. También comimos unas hamburguesas muy buenas, aunque ella prefirió unas papas.</p>
+            </li>
+
+            <li class="timeline-event">
+                <p class="timeline-date">27 de Octubre, 2024</p>
+                <p>Ese día, ahora sí, conoció a toda mi familia materna y les agradó. Estuvieron los matachines y también fuimos al OXXO con Kika. Ayudamos en el evento, y mi abuelita y muchas personas más quedaron encantadas con su ternura. También me compró un yogurt muy rico y me regaló unos chocorroles.</p>
+            </li>
+
+            <li class="timeline-event">
+                <p class="timeline-date">29 de Octubre, 2024</p>
+                <p>Ese día, pero hace 21 años, nacía la persona más amorosa del mundo, de menos de 1.60 metros. Le regalé un humbe (un regalo), que pensé que ya tenía o que no le gustaría, pero ahora veo que lo ama tanto como yo la amo a ella. También fuimos al IHOP y un niño le pegó a mi carro con una puerta... ¡San Petrinos! En fin...</p>
+            </li>
+
+            <li class="timeline-event">
+                <p class="timeline-date">31 de Octubre, 2024</p>
+                <p>HALLOWEEN. El maquillaje que ella hizo se llevó el día. Lo demás, sin palabras. Además, la cargué por 6 cuadras sin bajarla (al día siguiente no podía caminar).</p>
+            </li>
+
+            <li class="timeline-event">
+                <p class="timeline-date">03 de Noviembre, 2024</p>
+                <p>Fuimos al Nuevo Sur una noche, y vimos una película excelente. Me cayeron palomitas en el pelo, tomamos malteada Santa Clara y tuvimos una bonita platica.</p>
+            </li>
+
+            <li class="timeline-event">
+                <p class="timeline-date">08 de Noviembre, 2024</p>
+                <p>Queriamos ir a  Fundidora, pero había un concierto, así que decidimos ir a Nuevo Sur para comprar algunas cosillas, como una pizza. Luego nos fuimos a ver la hermosa vista de la ciudad mientras comíamos una pizza con unos boneless bien picantes. ¡Ah! Y chispeó, lo que estaba muy fresco.</p>
+            </li>
+        </ul>
+
+        <li class="timeline-event">
+            <p class="timeline-date">2024</p>
+            <p>PROXIMAMENTE</p>
+        </li>
+    </ul>
+
+        <!-- Nota de final -->
+        <div class="note">
+            <p><strong>Nota:</strong> Aquí se pueden agregar nuevas anécdotas conforme pasen los días.</p>
+        </div>
+
+        <img src="villa2.jpg" alt="Imagen de nosotros ">
+
+        <!-- Botón de regreso -->
+        <a href="index.html" class="back-button">Volver a Inicio</a>
+    </div>
+</body>
+</html>

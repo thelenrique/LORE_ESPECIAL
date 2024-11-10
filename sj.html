@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueños Juntos</title>
+    <style>
+        /* Fondo de la página */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+            background: linear-gradient(135deg, #ffccbc 30%, #f8bbd0 100%);
+            font-family: 'Arial', sans-serif;
+            color: #4e342e;
+            height: 100vh;
+            background-size: cover;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+            border: 2px solid #f48fb1;
+            text-align: center;
+            width: 100%;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Título */
+        h1 {
+            color: #e91e63;
+            font-size: 3em;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Subtítulo */
+        p {
+            color: #6a1b9a;
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        /* Estilo de la lista de sueños */
+        .dream-list {
+            list-style: none;
+            padding: 0;
+            font-size: 1.2em;
+            color: #6a1b9a;
+            text-align: left;
+            margin-top: 20px;
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        .dream-list li {
+            margin: 15px 0;
+            background: #f48fb1;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .dream-list li:hover {
+            background: #e91e63;
+            transform: translateX(5px);
+        }
+
+        /* Estilo de la sección "Y MUCHO MÁS" */
+        h2 {
+            font-size: 2em;
+            margin-top: 40px;
+            color: #e91e63;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Botón de regreso */
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background-color: #e91e63;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-button:hover {
+            background-color: #d81b60;
+            transform: scale(1.05);
+        }
+
+        /* Estilo para la lista de sueños */
+        .dream-list li::before {
+            content: "🌟 ";
+            color: #e91e63;
+        }
+
+        /* Animaciones para entrada */
+        .container {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Estilo para la imagen */
+        img {
+            width: 30%;        /* Ajusta el tamaño según sea necesario */
+            max-width: 400px;  /* Limita el tamaño máximo a 600px */
+            height: auto;      /* Mantiene las proporciones */
+            display: block;
+            margin: 30px auto; /* Centra la imagen */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sueños Juntos</h1>
+        <p>Estos son algunos de los planes y sueños que me gustaría cumplir a tu lado:</p>
+        <ul class="dream-list">
+            <li>Viajar a Real de Catorce</li>
+            <li>Unas carreritas Go Karts</li>
+            <li>Subir hasta mero arriba de un cerro</li>
+            <li>Visitar alguna playa</li>
+            <li>Ir a Hualahuises</li>
+            <li>Ir a Galeana o un lugar donde nieve</li>
+            <li>Hacer un monito de nieve</li>
+            <li>Cocinar coditos</li>
+            <li>Armar una flor de lego de 1000 piezas</li>
+            <li>Ir a un concierto</li>
+            <li>Ver Moana</li>
+            <li>Enseñarte a manejar</li>
+            <li>Ir un día a unas carreras</li>
+            <li>Ir a un karaoke</li>
+            <li>Un partido de fútbol (preferencia de Tigres)</li>
+            <li>Ir a los Sultanes</li>
+            <li>Jugar fútbol</li>
+            <li>Viaje de carretera</li>
+            <li>Comprar ropa, en especial hoodies</li>
+            <li>Bioparque</li>
+            <li>1000 parques que nos faltan conocer</li>
+            <li>Pintar en óleo</li>
+            <li>Ir a Misa</li>
+            <li>Maratón de una peli o serie</li>
+            <li>Aprender un idioma los dos (uno nuevo)</li>
+            <li>Ir a las mejores cafeterías</li>
+            <li>Museos de todo NL y el museo del desierto en Saltillo</li>
+            <li>Manejar de noche a todo volumen</li>
+        </ul>
+
+        <h2>Y MUCHO MÁS!</h2>
+
+        <img src="villa3.jpg" alt="Imagen de nuestros sueños juntos">
+
+        <!-- Botón de regreso -->
+        <a href="index.html" class="back-button">Volver a Inicio</a>
+    </div>
+</body>
+</html>

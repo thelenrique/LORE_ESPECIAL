@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TE AMO</title>
+    <style>
+        /* Fondo de la página */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+            background: linear-gradient(135deg, #ffb6c1 30%, #f8bbd0 100%);
+            font-family: 'Arial', sans-serif;
+            color: #4e342e;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border: 2px solid #f48fb1;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilo del texto "Te Amo" */
+        #loveText {
+            font-size: 3em;
+            font-weight: bold;
+            color: #e91e63;
+            cursor: pointer;
+            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        #loveText:hover {
+            color: #d81b60;
+            transform: scale(1.1);
+        }
+
+        /* Subtítulo para mostrar el idioma */
+        #language {
+            font-size: 1.4em;
+            color: #6a1b9a;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        /* Botón de regreso */
+        .back-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 30px;
+            background-color: #e91e63;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-button:hover {
+            background-color: #d81b60;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Animación suave en el contenedor */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="loveText" onclick="showNextLove()">TE AMO</div>
+        <div id="language">Español</div>
+
+        <!-- Botón de regreso -->
+        <a href="index.html" class="back-button">Volver a Inicio</a>
+    </div>
+
+    <script>
+        // Lista con "Te amo" en distintos idiomas
+        const lovePhrases = [
+            { phrase: "I love you", language: "Inglés" },
+            { phrase: "Je t'aime", language: "Francés" },
+            { phrase: "Ich liebe dich", language: "Alemán" },
+            { phrase: "Ti amo", language: "Italiano" },
+            { phrase: "Eu te amo", language: "Portugués" },
+            { phrase: "Я тебя люблю", language: "Ruso" },
+            { phrase: "我爱你", language: "Chino (Mandarín)" },
+            { phrase: "愛してる", language: "Japonés" },
+            { phrase: "사랑해", language: "Coreano" },
+            { phrase: "أحبك", language: "Árabe" },
+            { phrase: "Σ'αγαπώ", language: "Griego" },
+            { phrase: "Ik hou van jou", language: "Holandés" },
+            { phrase: "אני אוהב אותך", language: "Hebreo" },
+            { phrase: "Seni seviyorum", language: "Turco" },
+            { phrase: "Szeretlek", language: "Húngaro" },
+            { phrase: "Kocham cię", language: "Polaco" },
+            { phrase: "Jeg elsker deg", language: "Noruego" },
+            { phrase: "Rakastan sinua", language: "Finlandés" },
+            { phrase: "ฉันรักเธอ", language: "Tailandés" },
+            { phrase: "Anh yêu em", language: "Vietnamita" },
+            { phrase: "Te iubesc", language: "Rumano" },
+            { phrase: "Mahal kita", language: "Tagalo" },
+            { phrase: "Wo ai ni", language: "Chino (Cantonés)" },
+            { phrase: "Aishitemasu", language: "Japonés formal" },
+            { phrase: "Volim te", language: "Serbio" },
+            { phrase: "Aku cinta kamu", language: "Indonesio" },
+            { phrase: "T'estimo", language: "Catalán" },
+            { phrase: "Ndimakukonda", language: "Chichewa" },
+            { phrase: "Ek het jou lief", language: "Afrikaans" },
+            { phrase: "Te dua", language: "Albanés" },
+        ];
+
+        let index = 0;
+
+        function showNextLove() {
+            // Avanza al siguiente idioma y regresa al inicio si llega al final
+            index = (index + 1) % lovePhrases.length;
+            document.getElementById("loveText").textContent = lovePhrases[index].phrase;
+            document.getElementById("language").textContent = lovePhrases[index].language;
+        }
+    </script>
+</body>
+</html>
